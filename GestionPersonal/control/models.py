@@ -15,7 +15,7 @@ class Empleado(models.Model):
     
 
     def __str__(self):
-        return self.nombre
+        return (self.nombre,self.departamento,self.dias_trabajo)
     
 
 class Jornada(models.Model):
@@ -27,6 +27,6 @@ class Jornada(models.Model):
 
 
     def __str__(self):
-        return self.fecha 
+        return self.idjornada 
 
 
