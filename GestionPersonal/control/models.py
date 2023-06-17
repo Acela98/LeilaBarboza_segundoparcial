@@ -11,7 +11,8 @@ class Empleado(models.Model):
     turno=models.CharField(max_length=15)
     horario_entrada=models.CharField(max_length=15)
     horario_salida=models.CharField(max_length=15)
-
+    telefono=models.CharField(max_length=20)
+    activo=models.BooleanField
     
 
     def __str__(self):
